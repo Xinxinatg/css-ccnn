@@ -546,11 +546,11 @@ if __name__ == '__main__':
     torch.cuda.manual_seed_all(seed)
 
     # -- Dataset paths
-    if args.dataset == "parta":
+    if args.dataset == "VisDrone":
         validation_set = 30
         output_downscale = 8
         blur_sigma = 2
-        path = '../../dataset/ST_partA/'
+        path = './VisDrone2020-CC'
     elif args.dataset == "ucfqnrf":
         validation_set = 240
         output_downscale = 8
