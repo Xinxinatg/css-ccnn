@@ -116,7 +116,7 @@ class CrowdDataset:
             print('In CrowdDataset.__init__(): {} valid images selected and train set reduces to {}.'
                   .format(len(self.data_files['test_valid']), len(self.data_files['train'])))
             
-        self.val_pos = open('resources/{}_xy_positions.log'.format(name), 'r').readlines()
+        self.val_pos = open('./css-ccnn/resources/{}_xy_positions.log'.format(name), 'r').readlines()
         self.val_pos_counter = 0
         print('In CrowdDataset.__init__(): {} dataset initialized.'.format(self.name))
 
