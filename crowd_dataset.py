@@ -103,8 +103,8 @@ class CrowdDataset:
             files = self.data_files['train']
             if stage_1:
                 files_selected = random.sample(range(0, len(files)), valid_set_size)
-                np.save('resources/{}_validation_files.npy'.format(name), files_selected)
-            files_selected = np.load('resources/{}_validation_files.npy'.format(name))
+                np.save('./css-ccnn/resources/{}_validation_files.npy'.format(name), files_selected) 
+            files_selected = np.load('./css-ccnn/resources/{}_validation_files.npy'.format(name))
             validation_files = [f for i, f in enumerate(files)
                                 if i in files_selected]
             train_files = [f for i, f in enumerate(files)
