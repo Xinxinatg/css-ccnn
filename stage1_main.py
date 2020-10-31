@@ -423,9 +423,9 @@ if __name__ == '__main__':
     torch.cuda.manual_seed_all(11)
 
     # -- Dataset paths
-    if args.dataset == "parta":
+    if args.dataset == "VisDrone":
         validation_set = 30
-        path = "../../dataset/ST_partA/"
+        path = "./VisDrone2020-CC"
         output_downscale = 4
         dataset = CrowdDataset(path, name=args.dataset, valid_set_size=validation_set,
                            gt_downscale_factor=output_downscale, stage_1=True)
