@@ -407,10 +407,10 @@ if __name__ == '__main__':
     assert (args.dataset)
 
     # -- Check if requirements satisfied
-    assert(np.__version__=="1.15.4")
-    assert(cv2.__version__=="3.4.3")
-    assert(torch.__version__=="0.4.1")
-    assert("9.0" in torch.version.cuda)
+    assert(np.__version__=="1.18.5")
+    assert(cv2.__version__=="4.4.0")
+    assert(torch.__version__=="1.6.0")
+    assert("10.2" in torch.version.cuda)
     
     # -- Setting seeds for reproducability
     np.random.seed(11)
