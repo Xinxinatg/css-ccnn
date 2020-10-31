@@ -546,7 +546,7 @@ if __name__ == '__main__':
     torch.cuda.manual_seed_all(seed)
 
     # -- Dataset paths
-    if args.dataset == "VisDrone":
+    if args.dataset == "parta":
         validation_set = 30
         output_downscale = 8
         blur_sigma = 2
